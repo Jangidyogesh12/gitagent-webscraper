@@ -1,0 +1,15 @@
+name: scrape
+description: Fetch a URL and return its readable text as Markdown (args JSON on stdin, Markdown on stdout)
+input_schema:
+  type: object
+  properties:
+    url:
+      type: string
+      description: Full http(s) URL to scrape
+    max_chars:
+      type: number
+      description: Max output characters (default 20000)
+  required: [url]
+implementation:
+  script: scrape.sh
+  runtime: sh

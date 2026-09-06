@@ -1,19 +1,21 @@
 spec_version: 0.1.0
 name: assistant
 version: 0.1.0
-description: A git-native AI agent
+description: A web-scraping agent - scrapes any URL you give and saves clean text as Markdown in Scraped/
 author: null
 license: null
 tags: []
 model:
-  preferred: openai:gpt-4o-mini
+  preferred: opencode-go/glm-5.1
   fallback: []
   constraints: null
 tools:
 - cli
 - read
 - write
+- edit
 - memory
+- task_tracker
 skills: null
 runtime:
   max_turns: 50
