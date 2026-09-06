@@ -2,6 +2,8 @@
 name: webscrape
 description: Scrape a user-provided URL and save clean text as Markdown in Scraped/<sitename>.md
 confidence: 1.0
+usage_count: 1
+success_count: 1
 ---
 
 # Webscrape
